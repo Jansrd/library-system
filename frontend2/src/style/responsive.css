@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .book-list-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .book-list-content-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-list-input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .book-list-controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .book-list-select {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .books-list {
+    padding: 0;
+  }
+
+  .book-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .book-list-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .book-list-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-book-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .add-book-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-book-content-right-top,
+  .add-book-content-right-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-book-content-right-input {
+    width: 100%;
+  }
+
+  .add-book-button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .book {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .book-list-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-list-details {
+    flex-direction: column;
+  }
+
+  .book-list-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-list-actions-rent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .app {
+    padding: 10px;
+  }
+}

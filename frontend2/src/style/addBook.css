@@ -1,0 +1,102 @@
+.add-book {
+  width: 60%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-book-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-book-content-left {
+  width: 50%;
+  height: 300px;
+  border-right: 2px solid rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.add-book-content-right {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-right: 20px;
+}
+
+.add-book-content-right-top {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+}
+
+.add-book-content-right-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-book-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.add-book-input {
+  width: 100%;
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  height: 25px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.add-book-input:focus {
+  outline: none;
+}
+
+.add-book-content-right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 40px;
+  width: 90%;
+  height: auto;
+  justify-content: left;
+  align-items: left;
+}
+
+.add-book-button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: rgb(92, 206, 147);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.add-book-button:hover {
+  background-color: rgb(9, 173, 88);
+}

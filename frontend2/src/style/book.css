@@ -1,0 +1,82 @@
+.book {
+  width: 100%;
+}
+
+.book-list-item {
+  margin-top: 15px;
+}
+
+.book-list-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.book-list-details {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.book-list-details p {
+  width: 50%;
+  text-align: justify;
+}
+
+.book-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.book-author {
+  font-style: italic;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 18px;
+  background-color: rgb(0, 0, 0);
+}
+
+.book-available {
+  width: 100px;
+  color: green;
+}
+
+.book-unavailable {
+  width: 100px;
+  color: red;
+}
+.book-list-actions {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.book-list-actions-rent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.book-list-actions-rent input {
+  width: 16px;
+  margin-top: 7px;
+}
+
+.book-list-delete {
+  border: none;
+  background-color: rgb(247, 67, 67);
+  color: rgb(255, 255, 255);
+  padding: 2px 8px 2px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
