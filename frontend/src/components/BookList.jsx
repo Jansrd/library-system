@@ -16,7 +16,7 @@ const BookList = () => {
   const fetchBooks = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/books/order_by/?order=${order}`
+        `http://library-system-LB-187550530.us-east-1.elb.amazonaws.com:8000/api/books/order_by/?order=${order}`
       );
       setBooks(response.data);
     } catch (error) {
@@ -27,7 +27,7 @@ const BookList = () => {
   const searchBooks = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/books/search/?q=${search}`
+        `http://library-system-LB-187550530.us-east-1.elb.amazonaws.com:8000/api/books/search/?q=${search}`
       );
       setBooks(response.data);
     } catch (error) {
@@ -37,7 +37,9 @@ const BookList = () => {
 
   const deleteBook = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/api/books/${id}/`);
+      await axios.delete(
+        `http://library-system-LB-187550530.us-east-1.elb.amazonaws.com:8000/api/books/${id}/`
+      );
       setBooks(books.filter((book) => book.id !== id));
     } catch (error) {
       console.error("Error deleting book:", error);
@@ -47,10 +49,13 @@ const BookList = () => {
   const handleAvailabilityChange = async (id, available) => {
     try {
       const bookToUpdate = books.find((book) => book.id === id);
-      await axios.put(`http://localhost:8000/api/books/${id}/`, {
-        ...bookToUpdate,
-        available,
-      });
+      await axios.put(
+        `http://library-system-LB-187550530.us-east-1.elb.amazonaws.com:8000/api/books/${id}/`,
+        {
+          ...bookToUpdate,
+          available,
+        }
+      );
       setBooks(
         books.map((book) => (book.id === id ? { ...book, available } : book))
       );

@@ -12,7 +12,7 @@ const AddBook = ({ onBookAdded }) => {
   const addBook = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/books/",
+        "http://library-system-LB-187550530.us-east-1.elb.amazonaws.com:8000/api/books/",
         newBook
       );
       onBookAdded(response.data);
